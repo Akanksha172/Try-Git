@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .box
+        {
+            text-align: center;
+            background-color: cadetblue;
+            display: none;
+        }
+        @media (max-width:640px)
+        {
+            #box1
+            {
+                display: block;
+                background-color: yellow;
+            }
+        }
+        @media (min-width:641px) and (max-width:900px)
+        {
+            #box2
+            {
+                display: block;
+                background-color: violet;
+            }
+        }
+        @media (min-width:901px)
+        {
+            #box3
+            {
+                display: block;
+                background-color: tomato;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Small screen devices</div>
+    <div class="box" id="box2">Medium screen devices</div>
+    <div class="box" id="box3">Large screen devices</div>
+</body>
+</html>
